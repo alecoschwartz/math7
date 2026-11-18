@@ -1,133 +1,121 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:02.097
-Dilations, scaled copies, and slope.
+00:00:00.000 --> 00:00:08.213
+Scaled copies, dilations, similar figures, and slope are really one idea: changing a shape's size without changing its shape.
 
 2
-00:00:02.097 --> 00:00:08.970
-These sound like three different ideas, but they are really one idea: stretching a picture without changing its shape.
+00:00:09.050 --> 00:00:12.123
+This triangle has sides three, four, and five.
 
 3
-00:00:09.917 --> 00:00:13.175
-Here is a triangle with sides three, four, and five.
+00:00:12.123 --> 00:00:16.131
+Multiply every side by two, and you get six, eight, and ten.
 
 4
-00:00:13.175 --> 00:00:18.249
-Multiply every side by the same number, say two, and you get six, eight, and ten.
+00:00:16.131 --> 00:00:19.404
+That's a scaled copy, with a scale factor of two.
 
 5
-00:00:18.249 --> 00:00:22.134
-That is a scaled copy, and the number two is the scale factor.
+00:00:19.404 --> 00:00:21.274
+And the angles don't change.
 
 6
-00:00:22.134 --> 00:00:24.577
-Notice the angles do not change at all.
+00:00:21.617 --> 00:00:24.927
+Stretch it only sideways, and the angles change.
 
 7
-00:00:24.917 --> 00:00:30.116
-But if we stretch the triangle only sideways, the angles change and the shape gets distorted.
+00:00:24.927 --> 00:00:26.651
+That's not a scaled copy.
 
 8
-00:00:30.116 --> 00:00:31.569
-That is not a scaled copy.
+00:00:27.500 --> 00:00:29.728
+Scale drawings work the same way.
 
 9
-00:00:31.569 --> 00:00:34.756
-Every length must be multiplied by the same scale factor.
+00:00:29.728 --> 00:00:35.804
+One inch to fifty feet means every inch on the drawing stands for fifty feet in real life.
 
 10
-00:00:35.700 --> 00:00:40.369
-A dilation makes a scaled copy using one special point, called the center of dilation.
+00:00:35.804 --> 00:00:38.167
+So four inches is two hundred feet.
 
 11
-00:00:40.369 --> 00:00:42.921
-Draw a ray from the center through each corner.
+00:00:39.017 --> 00:00:42.720
+A dilation grows or shrinks a figure from a center point.
 
 12
-00:00:42.921 --> 00:00:47.156
-With a scale factor of two, each new point lands twice as far from the center.
+00:00:42.720 --> 00:00:47.593
+With a scale factor of two, every point moves twice as far from the center.
 
 13
-00:00:47.500 --> 00:00:52.642
-With a scale factor of one half, each point lands half as far away, so the copy shrinks.
+00:00:47.933 --> 00:00:50.651
+With one half, every point is half as far.
 
 14
-00:00:52.642 --> 00:00:55.388
-A scale factor bigger than one makes it bigger.
+00:00:50.651 --> 00:00:55.699
+Bigger than one grows, less than one shrinks, and exactly one changes nothing.
 
 15
-00:00:55.388 --> 00:00:57.608
-Between zero and one makes it smaller.
+00:00:56.533 --> 00:01:00.675
+With the center at the origin, just multiply both coordinates.
 
 16
-00:00:57.608 --> 00:01:00.529
-And a scale factor of exactly one changes nothing.
+00:01:00.675 --> 00:01:03.147
+Two, one, times three, is six, three.
 
 17
-00:01:01.467 --> 00:01:08.842
-On a coordinate grid, when the center of dilation is the origin, just multiply both coordinates by the scale factor.
+00:01:03.983 --> 00:01:11.185
+Two figures are similar if translations, rotations, reflections, and dilations take one onto the other.
 
 18
-00:01:08.842 --> 00:01:13.674
-The point two, one, dilated by a scale factor of three, lands at six, three.
+00:01:11.185 --> 00:01:14.821
+The angles match, and the sides keep the same ratio.
 
 19
-00:01:14.617 --> 00:01:15.260
-Now, slope.
+00:01:15.667 --> 00:01:20.505
+Slope tells how steep a line is: vertical change over horizontal change.
 
 20
-00:01:15.260 --> 00:01:18.065
-Draw a line, and tuck a right triangle under it.
+00:01:20.505 --> 00:01:25.544
+This slope triangle goes up two and over three, so the slope is two thirds.
 
 21
-00:01:18.065 --> 00:01:21.923
-The slope is the vertical change divided by the horizontal change.
+00:01:25.883 --> 00:01:30.243
+A bigger slope triangle is just a dilation: up four, over six.
 
 22
-00:01:21.923 --> 00:01:26.014
-Here the rise is two and the run is three, so the slope is two thirds.
+00:01:30.243 --> 00:01:31.438
+Still two thirds.
 
 23
-00:01:26.350 --> 00:01:27.901
-Here is the beautiful part.
+00:01:31.438 --> 00:01:36.571
+Slope triangles on a line are always similar, so the slope never changes.
 
 24
-00:01:27.901 --> 00:01:33.989
-Dilate that slope triangle from a point on the line, and you get a bigger slope triangle on the same line.
+00:01:36.917 --> 00:01:38.393
+That gives us a test.
 
 25
-00:01:33.989 --> 00:01:35.080
-Rise four, run six.
+00:01:38.393 --> 00:01:40.361
+Is nine, seven on this line?
 
 26
-00:01:35.080 --> 00:01:36.918
-Four sixths is still two thirds.
+00:01:40.361 --> 00:01:43.102
+From zero, one, it's up six, over nine.
 
 27
-00:01:36.918 --> 00:01:42.949
-Every slope triangle on a line is a scaled copy of the others, and that is why a line has just one slope.
+00:01:43.102 --> 00:01:46.687
+Six ninths is two thirds, so yes, it's on the line.
 
 28
-00:01:43.283 --> 00:01:48.134
-If the line goes down as you move to the right, the rise is negative, so the slope is negative.
+00:01:47.033 --> 00:01:50.980
+And if a line goes down to the right, its slope is negative.
 
 29
-00:01:49.083 --> 00:01:49.783
-So remember.
+00:01:51.817 --> 00:01:59.127
+Remember: scale factors multiply lengths, similar figures have the same shape, and slope is rise over run.
 
 30
-00:01:49.783 --> 00:01:52.174
-The scale factor multiplies every length.
-
-31
-00:01:52.174 --> 00:01:55.323
-The center of dilation is where the stretching starts.
-
-32
-00:01:55.323 --> 00:01:58.706
-And slope is rise over run, the same everywhere on a line.
-
-33
-00:01:58.706 --> 00:02:00.047
+00:01:59.127 --> 00:02:00.713
 Good luck on your test!

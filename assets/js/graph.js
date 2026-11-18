@@ -84,24 +84,36 @@ class Grid {
     const p = pt.matrixTransform(this.svg.getScreenCTM().inverse());
     return [this.xmin + (p.x - this.pad) / this.unit, this.ymax - (p.y - this.pad) / this.unit];
   }
-  // make named points draggable (snapped to integer lattice). pts: {name: [x,y]}; onMove(name) redraws.
-  enableDrag(pts, onMove, radius = 0.7) {
+  // make named points draggable. pts: {name: [x,y]}; onMove(name) redraws.
+  // opts.snap(name) -> grid step to snap to (default 1; 0 = no snapping)
+  // opts.onEmpty(x, y) -> called when the press misses every point; may return a name to start dragging
+  enableDrag(pts, onMove, radius = 0.7, opts = {}) {
     let active = null;
     const svg = this.svg;
+    const snapTo = (name, x, y) => {
+      const s = opts.snap ? opts.snap(name) : 1;
+      if (s) { x = Math.round(x / s) * s; y = Math.round(y / s) * s; }
+      x = Math.max(this.xmin, Math.min(this.xmax, x));
+      y = Math.max(this.ymin, Math.min(this.ymax, y));
+      return [Math.round(x * 100) / 100, Math.round(y * 100) / 100];
+    };
     svg.addEventListener("pointerdown", e => {
       const [x, y] = this.toWorld(e);
       let best = null, bd = radius;
       for (const k in pts) {
+        if (opts.fixed && opts.fixed.includes(k)) continue;
         const d = Math.hypot(pts[k][0] - x, pts[k][1] - y);
         if (d < bd) { bd = d; best = k; }
+      }
+      if (!best && opts.onEmpty) {
+        best = opts.onEmpty(x, y);
+        if (best) { pts[best] = snapTo(best, x, y); onMove(best); }
       }
       if (best) { active = best; svg.setPointerCapture(e.pointerId); e.preventDefault(); }
     });
     svg.addEventListener("pointermove", e => {
       if (!active) return;
-      let [x, y] = this.toWorld(e);
-      x = Math.max(Math.ceil(this.xmin), Math.min(Math.floor(this.xmax), Math.round(x)));
-      y = Math.max(Math.ceil(this.ymin), Math.min(Math.floor(this.ymax), Math.round(y)));
+      const [x, y] = snapTo(active, ...this.toWorld(e));
       if (pts[active][0] !== x || pts[active][1] !== y) { pts[active] = [x, y]; onMove(active); }
     });
     const end = () => { active = null; };
